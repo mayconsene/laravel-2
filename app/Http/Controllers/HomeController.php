@@ -40,4 +40,9 @@ class HomeController extends Controller
        //retornar página para o usuário
        return view('resultado', compact('result'));
     }
+
+    public function pokemon($nome)
+    {
+       return view('pokemon', compact('nome'));
+    }
 }

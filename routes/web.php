@@ -25,3 +25,5 @@ Route::get('/sum', [CalcController::class, 'showSoma']);
 
 Route::post('/calc/sum', [CalcController::class, 'calcSoma']);
 
+Route::get('/pokemon/{nome}', [HomeController::class, 'pokemon']);
+
